@@ -1,0 +1,59 @@
+body {
+  margin:0px;
+}
+
+#logo{
+  width:50px;
+}
+
+.red_txt{
+  color:red;
+}
+.txt{
+  margin: 10px;
+}
+.card-cont{
+  display:flex;
+}
+
+.card-cont-1{
+  display: flex;
+  overflow-x: scroll;
+}
+.card-cont-1::-webkit-scrollbar{
+  width:0px;
+}
+
+.card1-img{
+  height:300px;
+  border-radius: 18px;
+
+}
+
+
+
+.btn{
+  margin-left: 27%;
+  margin-bottom: 20px;
+}
+
+.cad{
+  border:2px solid black;
+  border-radius: 0px;
+  margin:7px
+}
+
+h4{
+  margin-left:10px ;
+}
+footer{
+  background-color:azure;
+}
+.feature-icon{
+  border-radius: 7px;
+}
+
+.hovered{
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles/App.css";
+import "./styles/pages.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/home";
+import YieldPredict from "./pages/yieldPredictPage";
+import YieldResult from "./pages/yieldResultPage";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          {" "}<Route path="/" element={<Home />} />{" "}
+          <Route path="/YieldPage" element={<YieldPredict />} />
+          <Route path="/Yieldresult" element={<YieldResult />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
+
+        </Routes>
+      </Router>
+
+
     </div>
   );
 }
