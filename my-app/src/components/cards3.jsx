@@ -5,7 +5,7 @@ function Cards() {
   return (
     <div className={styles.txt}>
       <h3 className={styles["ui2-heading"]}>
-        All New <span><b classNameName="red_txt">iphone Lineup</b></span>
+        All New <span><b classNameName="red_txt">iPhone Lineup</b></span>
       </h3>
 
       <div className={styles["card-cont-1"]}>

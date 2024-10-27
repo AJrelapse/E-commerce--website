@@ -14,12 +14,11 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          {" "}<Route path="/" element={<Home />} />{" "}
+          <Route path="/" element={<Home />} />
           <Route path="/YieldPage" element={<YieldPredict />} />
           <Route path="/Yieldresult" element={<YieldResult />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
-
         </Routes>
       </Router>
 
