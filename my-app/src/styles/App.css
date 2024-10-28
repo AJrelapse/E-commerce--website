@@ -199,3 +199,10 @@ body {
   }
 }
 
+.card-cont-1{
+  display: flex;
+  overflow-x: scroll;
+}
+.card-cont-1::-webkit-scrollbar{
+  width:0px;
+}

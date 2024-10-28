@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 import Cards from "../components/cards";
 import Cards2 from "../components/cards2";
 import Cards3 from "../components/cards3";
-
+import { PRODUCTS } from "../products";
 
 
 function Home() {
@@ -20,10 +20,18 @@ function Home() {
       <hr/>
       <Cards2 />
       <hr/>
-      <Cards3 />
+      <h3 >
+        All New <span><b classNameName="red_txt">iPhone Lineup</b></span>
+      </h3>
+      <div className="card-cont-1">
+      {PRODUCTS.map((product) => (
+          <Cards3 data={product} />
+        ))}
+        </div>
       <hr/>
       <Footer />
     </div>
+
   );
 }
 

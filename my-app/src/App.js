@@ -4,23 +4,24 @@ import "./styles/pages.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/home";
-import YieldPredict from "./pages/yieldPredictPage";
-import YieldResult from "./pages/yieldResultPage";
+import Cart from "./pages/cart";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
+import { ShopContextProvider } from "./components/shop-context";
 
 function App() {
   return (
     <div className="App">
+      <ShopContextProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/YieldPage" element={<YieldPredict />} />
-          <Route path="/Yieldresult" element={<YieldResult />} />
+          <Route path="/YieldPage" element={<Cart/>} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
         </Routes>
       </Router>
+      </ShopContextProvider>
 
 
     </div>
