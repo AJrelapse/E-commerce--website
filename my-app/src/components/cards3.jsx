@@ -9,10 +9,7 @@ const Cards = (props) => {
   const cartItemCount = cartItems[id];
   return (
     <div className={styles.txt}>
-
-
-
-
+      
           <div className={styles.card}>
               <div className={styles["card-img"]}><div className={styles.img}><img src={productImage} alt="IPhone 16" /></div></div>
               <div className={styles["card-title"]}>{productName}</div>

@@ -20,14 +20,12 @@ export const PRODUCTS = [
     id: 3,
     productName: "IPhone 16 Pro",
     price: 119000.0,
-    productImage: product4,
+    productImage: product3,
   },
   {
     id: 4,
     productName: "IPhone 16 Pro Max",
     price: 144900.0,
-    productImage: product3,
+    productImage: product4,
   },
-
-
 ];

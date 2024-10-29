@@ -1,15 +1,18 @@
 import { createContext, useState } from "react";
 import { PRODUCTS } from "../products";
+import { PRODUCTS2 } from "../products2";
+import { PRODUCTS3 } from "../products3";
 
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
   let cart = {};
-  for (let i = 1; i < PRODUCTS.length + 1; i++) {
-    cart[i] = 0;
-  }
+  [...PRODUCTS, ...PRODUCTS2, ...PRODUCTS3].forEach((product) => {
+    cart[product.id] = 0;
+  });
   return cart;
 };
+
 
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
@@ -18,12 +21,20 @@ export const ShopContextProvider = (props) => {
     let totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
-        let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
-        totalAmount += cartItems[item] * itemInfo.price;
+        let itemInfo = PRODUCTS.find((product) => product.id === Number(item)) ||
+                       PRODUCTS2.find((product) => product.id === Number(item)) ||
+                       PRODUCTS3.find((product) => product.id === Number(item));
+  
+        if (itemInfo) {
+          totalAmount += cartItems[item] * itemInfo.price;
+        } else {
+          console.warn(`Product with id ${item} not found.`);
+        }
       }
     }
     return totalAmount;
   };
+  
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));

@@ -22,7 +22,7 @@ function Navbar() {
       </svg>
     </button>
 
-    <button className={styles.button} onClick={() => navigate("/YieldPage")}>
+    <button className={styles.button} onClick={() => navigate("/Cart")}>
       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" stroke-linejoin="round" stroke-linecap="round" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" className={styles.icon}>
         <circle r="1" cy="21" cx="9"></circle>
         <circle r="1" cy="21" cx="20"></circle>
