@@ -20,7 +20,6 @@ function Cards() {
       <div className={styles["card-cont-1"]}>
         <div className={styles.cad}>
           <img className="card1-img" src="./assets/images/nzxt1.avif" alt="Prebuilt Gaming PC" onClick={() => handleNavigate("./assets/images/nzxt1.avif", "Prebuilt Gaming PC", "₹ 2,50,000", 5)} />
-          <h4>.</h4>
           <h4>Prebuilt Gaming PC</h4>
         </div>
 
@@ -61,8 +60,6 @@ function Cards() {
             alt="Gaming Laptops"
             onClick={() => handleNavigate("./assets/images/legion.webp","Gaming Laptops", "₹ 1,75,000",9)}
           />
-          <h4>.</h4>
-          <h4>.</h4>
           <h4>Gaming Laptop</h4>
         </div>
       </div>

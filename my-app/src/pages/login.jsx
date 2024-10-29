@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from "../styles/login.module.css";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -33,7 +35,8 @@ const Login = () => {
     }
   };
 
-  return (
+  return (<div>
+    <Navbar/>
     <div className={styles["login-container"]}>
       <form className={styles["login-form"]}>
         <p className={styles["login-form-title"]}>Sign in to your CodeChef Store account</p>
@@ -69,6 +72,8 @@ const Login = () => {
           No account? <a href="/signup">Sign up</a>
         </p>
       </form>
+    </div>
+    <Footer/>
     </div>
   );
 };

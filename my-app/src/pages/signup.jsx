@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from "../styles/signup.module.css";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -33,7 +35,8 @@ const Signup = () => {
     }
   };
 
-  return (
+  return (<div>
+    <Navbar/>
     <div className={styles.formContainer}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.flexColumn}>
@@ -80,6 +83,8 @@ const Signup = () => {
           Already have an account? <span className={styles.span} ><a href="/login">Login</a></span>
         </p>
       </form>
+    </div>
+    <Footer/>
     </div>
   );
 };
