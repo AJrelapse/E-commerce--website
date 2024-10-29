@@ -52,21 +52,21 @@ To run the application in development mode, use the following command:
 
 ## Folder Structure
 Here’s a brief overview of the project folder structure: 
-    /ecommerce-website
-    ├── /public
-    │   └── index.html
-    ├── /src
-    │   ├── /components       # React components
-    │   ├── /styles           # CSS Modules
-    │   ├── /pages            # Different pages (e.g., Home, Product, Cart)
-    │   ├── App.js            # Main application component
-    │   ├── index.js          # Entry point of the application
-    │   └── ...
-    ├── package.json
-    └── README.md
+   - /ecommerce-website
+   - ├── /public
+   - │   └── index.html
+   - ├── /src
+   - │   ├── /components       # React components
+   - │   ├── /styles           # CSS Modules
+   - │   ├── /pages            # Different pages (e.g., Home, Product, Cart)
+   - │   ├── App.js            # Main application component
+   - │   ├── index.js          # Entry point of the application
+   - │   └── ...
+   - ├── package.json
+   - └── README.md
 
 ## Contact
 If you have any questions or suggestions, feel free to contact me:
-  Name: S.M. Ajay Anand
-  Email: ajayanandsm@gmail.com
-  GitHub: AJrelapse
+ - Name: S.M. Ajay Anand
+ - Email: ajayanandsm@gmail.com
+ - GitHub: AJrelapse
