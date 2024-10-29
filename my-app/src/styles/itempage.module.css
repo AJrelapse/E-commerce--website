@@ -1,0 +1,135 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: hidden;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 700px;
+    padding: 1em;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .card2 {
+    width: 100%;
+    max-width: 400px;
+    padding: 1em;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-img:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, 
+                rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+  }
+
+  .card-info {
+    padding-top: 10%;
+  }
+  
+  .text-title {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-body {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+ 
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+
+  .card-button {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid #252525;
+    background-color: rgb(231, 84, 84);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card-button:hover {
+    background-color: rgb(84, 231, 211);
+    border-color: #b7381c;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .card, .card2 {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    .text-title {
+      font-size: 1.3rem;
+    }
+  
+    .text-body {
+      font-size: 0.9rem;
+    }
+  
+    .card-button {
+      padding: 0.5em 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-title {
+      font-size: 1.1rem;
+    }
+  
+    .text-body {
+      font-size: 0.8rem;
+    }
+  
+    .card-button {
+      width: 100%;
+      justify-content: center;
+      padding: 0.7em;
+    }
+  
+    svg {
+      margin: 0;
+    }
+  }
+  
