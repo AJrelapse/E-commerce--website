@@ -40,11 +40,11 @@ const Cart = () => {
 
       {totalAmount > 0 ? (
         <div className="checkout">
-          <p>Subtotal: ₹ {totalAmount}</p>
+          <h2>Subtotal: ₹ {totalAmount}</h2>
           <button onClick={() => navigate("/")}>Continue Shopping</button>
           <button onClick={() => { checkout(); navigate("/checkout");}}>Checkout</button>
         </div>
-      ) : ( <h1>Your Shopping Cart is Empty</h1>)}
+      ) : ( <div className="checkout" ><h1>Your Shopping Cart is Empty</h1> <button onClick={() => navigate("/")}>Continue Shopping</button> </div>)}
     </div>
   );
 };

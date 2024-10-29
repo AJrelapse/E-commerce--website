@@ -1,0 +1,46 @@
+.footerContainer {
+    background-color: #212529;
+    color: #ffffff;
+  }
+  
+  
+  .footerContent {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .navLink {
+    color: #000000;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  .navLink:hover {
+    color: #31827a;
+    font-weight: bolder;
+  }
+  
+  .socialMedia a {
+    color: #000000;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.2s;
+  }
+  
+  .socialMedia a:hover {
+    color: #377c76;
+    transform: scale(1.2);
+  }
+  
+  .textCenter {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
